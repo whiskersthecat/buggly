@@ -1,0 +1,37 @@
+Bugglyio 1.2.0 is live for playtesting!
+These are all of the changes since the initial release:
+
+PERFORMANCE / BUGFIX
+- Fixed (?) Some players (Zev, strawberry) will no longer have incredibly fast framerate, causing excessive lag.
+- Fixed (?) Floating apples that can't be collected should despawn when the player they are for leaves
+- Server now handles projectile movement and collisions on a seperate thread independent of client websocket pings, which should help network bandwidth.
+- Client now loads all files from the HTTP server when they initially load the page. The player will see a loading screen when they spawn in before all resources are loaded. This prevents sudden lag in the middle of playing from fetching graphics.
+- Players changing their window dimensions or zooming in on their browser will no longer zoom in / out their vision range.
+
+GAMEPLAY / UI
+- Hand Limit: you can only own 8 cards at once. (Once you have 8, you must combine cards into level 2 / 3 before buying more cards)
+- Respawn: after losing, you can respawn immediately, keeping a portion of the cards you had.
+- Players' hands will be hidden unless they mouseover the cards. This helps with blind spots when moving downwards.
+- Players will no longer spawn close to other players.
+- All cards and most actions have sound fx, courtesy of ?_beats studios.
+- Cards will now randomly respawn occasionally. This helps unwanted cards from piling up.
+- Player's usernames will now be saved in the browser as cookies, and will be autofilled when visiting the site again
+
+BALANCE CHANGES
+- Larger bugglys now are slower than before at rotating and moving
+- Larger bugglys will now significantly decay in size over time
+- Players will now be eaten slightly faster when you are on top of them
+- Tumbler and Burst: projectile size is determined less by buggly size; large bugglys don't have exceedingly large projectiles.
+~ all Projectiles: apples collected from attacks are now only worth 0.75 apples each (e.g. a Web (4 damage) gives you 3 apples when someone walks into it)
+- Tumbler: Damage 5 -> 7
+- Burst:   Damage 4 -> 5
+- Web:     Damage 2 -> 4
+- Tractor: Damage increased slightly
+- Boost:   Extra movement increased slightly
+- Survey:  Vision range decreased slightly
+- Honeycrisp: Apples collected from attacks are also doubled, duration increased slightly
+
+NEW CARD
+- Beam (Level 3)
+
+Thanks to everyone who helped to playtest the previous version! Feel free to hop on right now to help test, and give your ideas (:

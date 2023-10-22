@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<style>
+	.nomargin {
+		margin : 0px;
+	}
+	div.centered {
+		text-align: center;
+	}
+	#usernamebox {
+		position: absolute;
+		width: 200px;
+		height: 40px;
+		background-color: white;
+
+		top: 70%;
+		left: calc(50% - 100px);
+		margin: auto;
+		font-size:40px;
+		
+	}
+	#usernamebox:focus{
+		background-color: lightblue;
+	}
+</style>
+	<title>
+		Bugglyio
+	</title>
+	<body class = 'nomargin'>
+		<!--<img src='favicon.ico' hidden = 'hidden' id='character'>-->
+		<!--<img src="logo_copy.png">-->
+		<!--<img src="poker-card_2.png">-->
+		<canvas id = "canvas1" width = window.innerwidth height = window.innerheight>
+
+		<audio src = 'fx/boost_edited.m4a' id ='boost'>
+		<audio src = 'fx/harvest_cropped.m4a' id ='harvest'>
+		<audio src = 'fx/crunch3.m4a' id ='crunch'>
+		<audio src = 'fx/card_draw_cropped.m4a' id ='card_draw'>
+		<audio src = 'fx/teleport.m4a' id ='teleport_sound'>
+		<audio src = 'fx/beeps.m4a' id ='surveying' volume = '0.6'>
+
+		<audio src = 'fx/goofy_Beat.m4a' autoplay='' loop='True' id='music' volume='0.4'>
+		<audio src = 'fx/net?.m4a' id = 'net'>
+		<audio src = 'fx/honeycrisp.m4a' id = 'honeycrisp'>
+		<audio src = 'fx/tractor?.m4a' id = 'tractor'>
+		<audio src = 'fx/buycard.m4a' id = 'buycard'>
+		<audio src = 'fx/maybe_burst.m4a' id = 'burst'>
+		<audio src = 'fx/cloak?.m4a' id = 'cloak'>
+		<audio src = 'fx/LAser.m4a' id = 'beam' volume = '0.1'>
+		<!--<input type="text">-->
+		
+		<!--<img src='graphics/map.png' hidden = 'hidden'> -->
+		<img src = 'https://pixelscape.org/games/buggly/map.jpg' hidden = 'hidden'>
+
+
+		<img src='cards/harvest.png' hidden = 'hidden'>
+		<img src='cards/boost.png' hidden = 'hidden'>
+		<img src='cards/survey.png' hidden = 'hidden'>
+		<img src='cards/teleport.png' hidden = 'hidden'>
+		<img src='cards/harbloo.png' hidden = 'hidden'>
+		<img src='cards/web.png' hidden = 'hidden'>
+		<img src='cards/burst.png' hidden = 'hidden'>
+		<img src='cards/honeycrisp.png' hidden = 'hidden'>
+		<img src='cards/tractor.png' hidden = 'hidden'>
+		<img src='cards/camoflauge.png' hidden = 'hidden'>
+		<img src='cards/crown.png' hidden = 'hidden'>
+
+		<img src='graphics/secret.png' hidden = 'hidden'>
+		<img src='archive/nap.png' hidden = 'hidden'>
+
+		<img src='graphics/bugg.png' hidden = 'hidden'>
+		<img src='graphics/buggiclosed.png' hidden = 'hidden'>
+		<img src='graphics/apple.png' hidden = 'hidden'>
+		<img src='graphics/apple_dark.png' hidden = 'hidden'>
+		<img src='graphics/harbloo_projectile.png' hidden = 'hidden'>
+		<img src='graphics/bugg_eaten.png' hidden = 'hidden'>
+		<img src='graphics/apple_gold.png' hidden = 'hidden'>
+		<img src='graphics/player_web.png' hidden = 'hidden'>
+		<img src='graphics/tractor_image_noshadow.png' hidden = 'hidden'>
+
+		<img src='graphics/bugglytitlescreen.png' hidden = 'hidden'>
+		<img src='graphics/playcard3.png' hidden = 'hidden'>
+		<img src='graphics/buycard2.png' hidden = 'hidden'>
+		<img src='graphics/level2upgrade.png' hidden = 'hidden'>
+
+		<img src='graphics/crown.png' hidden = 'hidden'>
+		<img src='graphics/crownside.png' hidden = 'hidden'>
+
+
+		<script src='game.js'>
+		</script>
+
+		</canvas>
+	</body>
+</html>
